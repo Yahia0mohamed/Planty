@@ -1,0 +1,324 @@
+/* make default */
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+/* navbar */
+
+.navbar{
+  background-color: white;
+  width: 70%;
+}
+.navbar-brand{
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.navbar-brand strong{
+  height: 100%;
+  text-align: end;
+  display: block;
+  font-size: 25px; 
+  font-weight: bold;
+  font-size: clamp(18px,4vw,20px);
+}
+
+.navbar-nav{
+  display: flex;
+  align-items: start;
+  justify-content: space-around;
+  flex-direction: row;
+  width: 100%;
+}
+
+.navbar-toggler{
+  border: 0px;
+  font-size: 25px;
+}
+
+.navbar-toggler:hover ,.navbar-toggler:active ,.navbar-toggler:focus{
+  border: 0px;
+  box-shadow: none;
+}
+
+.nav-item{
+  font-size: clamp(18px,4vw,20px) !important;
+  font-weight: bold !important;
+  transition: all ease-in-out 0.5s !important;
+}
+.nav-item:hover{
+  font-weight: bolder;
+}
+
+.custom-btn{
+  background-color: #28d74b;
+  font-size: clamp(18px,4vw,20px);
+  font-weight: bold;
+  transition: all ease-in-out 0.5s;
+}
+.custom-btn:hover{
+  background-color: #28d74b;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+@media only screen and (max-width:992px){
+  .navbar-nav{
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+}
+
+/* home section */
+
+.plantyIntrance {
+    height: 100vh;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    flex-direction: row;
+    width: 110%;
+}
+.plantyStart{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.img{
+    width: clamp(300px,37vw,550px);
+}
+.contentTxt{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    gap: 3vw;
+    flex-direction: column;
+}
+.title{
+    font-size: clamp(35px, 4.7vw, 1000px);
+    font-weight: bolder;
+    text-align: left;
+    width: 100%;
+}
+.contentTxt h2{
+    font-size:clamp(20px,2vw,1000px);
+    width: 100%;
+}
+.contentTxt a{
+    font-size:clamp(18px,1.5vw,1000px);
+    font-weight: bold;
+    text-align: left;
+    width: fit-content;
+    text-decoration: none;
+    color: black;
+    transition: 0.5s ease-in-out;
+}
+
+.contentTxt a:hover{
+    color: #28d74b;
+}
+
+@media only screen and (max-width:580px) {
+    .plantyIntrance{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column-reverse;
+        height: 110vh;
+        width: 100%;
+    }
+    .plantyStart{
+        width: 80%;
+        height: 40%;
+        margin-top: 30px;
+    }
+    .contentTxt{
+        height: 60%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 80%;
+    }
+    .contentTxt h1,.contentTxt h2,.contentTxt a{
+        text-align: center;
+    }
+}
+
+/* about us section */
+
+.aboutPlanty{
+    height: 100vh;
+    background-image: url(../img/plantyBg.svg);
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.aboutPlanty h1{
+  text-align: center;
+}
+.abtTxt{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 70%;
+}
+.abtTxt img{
+  width: clamp(300px,35vw,550px);
+}
+.learnMore {
+    display:flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    width: 70%;
+    height: 100%;
+}
+
+.learnMore h2{
+  font-size:clamp(18px,1.5vw,1000px);
+  width: 100%;
+  text-align: center;
+}
+.cont{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.cont h3{
+  font-weight: bolder;
+}
+@media only screen and (max-width:580px){
+  .aboutPlanty{
+    height: 140vh;
+    gap: 5vw;
+  }
+  .abtTxt{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 90%;
+  }
+  .learnMore{
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .cont{
+    text-align: center;
+  }
+}
+
+/* button */
+
+.animated-button {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    padding: 16px 36px;
+    border: 4px solid;
+    border-color: transparent;
+    font-size: 16px;
+    background-color: inherit;
+    border-radius: 100px;
+    font-weight: 600;
+    color: black;
+    box-shadow: 0 0 0 2px black;
+    cursor: pointer;
+    overflow: hidden;
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+    width: clamp(170px, 12vw, 300px);
+    height: clamp(60px, 0.1vw, 300px);
+  }
+  
+  .animated-button svg {
+    position: absolute;
+    width: 24px;
+    fill: black;
+    z-index: 9;
+    transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  
+  .animated-button .arr-1 {
+    right: 16px;
+  }
+  
+  .animated-button .arr-2 {
+    left: -25%;
+  }
+  
+  .animated-button .circle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 20px;
+    height: 20px;
+    background-color: #28d74b;
+    border-radius: 50%;
+    opacity: 0;
+    transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  
+  .animated-button .text {
+    position: relative;
+    z-index: 1;
+    transform: translateX(-12px);
+    transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+    text-align: center;
+    display: inline;
+  }
+  
+  .animated-button:hover {
+    box-shadow: 0 0 0 12px transparent;
+    color: #212121;
+    border-radius: 12px;
+  }
+  
+  .animated-button:hover .arr-1 {
+    right: -25%;
+  }
+  
+  .animated-button:hover .arr-2 {
+    left: 16px;
+  }
+  
+  .animated-button:hover .text {
+    transform: translateX(12px);
+  }
+  
+  .animated-button:hover svg {
+    fill: #212121;
+  }
+  
+  .animated-button:active {
+    scale: 0.95;
+    box-shadow: 0 0 0 4px black;
+  }
+  
+  .animated-button:hover .circle {
+    width: 220px;
+    height: 220px;
+    opacity: 1;
+  }
+  

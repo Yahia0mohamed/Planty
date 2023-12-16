@@ -97,8 +97,7 @@ body{
     height: 100%;
     display: flex;
     align-items: start;
-    justify-content: center;
-    gap: 3vw;
+    justify-content: space-around;
     flex-direction: column;
 }
 .title{
@@ -142,7 +141,7 @@ body{
         height: 60%;
         display: flex;
         align-items: center;
-        justify-content: center;
+        justify-content: space-evenly;
         flex-direction: column;
         width: 80%;
     }

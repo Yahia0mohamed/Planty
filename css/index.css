@@ -131,7 +131,6 @@ body{
         align-items: center;
         justify-content: center;
         flex-direction: column-reverse;
-        height: 110vh;
         width: 100%;
     }
     .plantyStart{
@@ -204,7 +203,6 @@ body{
 }
 @media only screen and (max-width:580px){
   .aboutPlanty{
-    height: 140vh;
     gap: 5vw;
   }
   .abtTxt{

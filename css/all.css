@@ -1,0 +1,15 @@
+:root{
+    --primary-color:#28D74B;
+    --txt-color:#022407;
+    --secondary-color:#71C4F6;
+    --bg-color:#EFFEF3;
+    --accent-color:#577FF4;
+    --heading-font-family:"Anton", sans-serif;
+    --body-font-family:"Dela Gothic One", sans-serif;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    background-color: var(--bg-color);
+}

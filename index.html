@@ -4,78 +4,84 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Planty</title>
-    <link rel="icon" type="image/png" href="img/plantyLogo.svg">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Dela+Gothic+One&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg">
-      <div class="container">
-        <a class="navbar-brand mb-0" href="index.html"><img src="img/plantyLogo.svg" alt="Logo" width="70"><strong>Planty</strong></a>
+    <nav class="nav navbar navbar-expand-lg">
+        <div class="nav-logo">
+            <a href="index.html"><img src="img/plantyLogo.svg" alt="logo"><h1>Planty</h1></a>
+        </div>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="fa-solid fa-bars"></span>
+            <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="html/about.html">About us</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="html/contact.html">Contact us</a>
-            </li>
-            <li class="nav-item">
-              <a class="btn custom-btn" href="html/login.html">login</a>
-            </li>
-          </ul>
+        <div class="nav-links collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item"><a href="#home" class="link">Home</a></li>
+                <li class="nav-item"><a href="#services" class="link">Services</a></li>
+                <li class="nav-item"><a href="#contact" class="link">Contact</a></li>
+                <li class="nav-item"><a href="#Login" class="link">Login</a></li>
+            </ul>
         </div>
     </nav>
-    <div class="plantyIntrance">
-        <div class="contentTxt">
-            <h1 class="title">Welcome to Planty</h1>
-            <h2>
-                <strong>Planty</strong> is an online platform selling a variety of plants. It aims to make lives greener, provides plant care information, and delivers plants to your doorstep.
-            </h2>
-            <a href="#aboutPlanty">See More <i class="fa-solid fa-arrow-right"></i></a>
+    <div class="main-section">
+        <div id="main_img" class="main-img">
+            <img src="img/Mango tree-bro.svg" alt="">
         </div>
-        <div class="plantyStart"><img src="img/Mango tree-bro.svg" alt="bg" class="img"></div>
-    </div>
-    <div class="aboutPlanty" id="aboutPlanty">
-      <h1 class="title">About Planty</h1>
-        <div class="abtTxt">
-          <div class="learnMore">
-            <h2>
-              Welcome to Planty, your online gateway to the world of greenery. Our mission is to bring nature closer to you. We believe in the power of plants to enhance lives and want to make your world greener and healthier.
-              At Planty, we offer a wide variety of plants, catering to your indoor and outdoor needs. Our user-friendly platform makes it easy for you to browse and purchase the plants that best suit your space and lifestyle. But we're not just about selling plants. We're about creating a community of plant lovers.
-            </h2>
-            <div class="cont">
-              <h3><strong>You can read more about Planty Here</strong></h3>
-              <a href="html/about.html" class="animated-button">
-                <svg viewBox="0 0 24 24" class="arr-2" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
-                  ></path>
-                </svg>
-                <h2 class="text">About Us</h2>
-                <span class="circle"></span>
-                <svg viewBox="0 0 24 24" class="arr-1" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
-                  ></path>
-                </svg>
-              </a>
-            </div>
-        </div>
+        <div id="main_txt" class="main-txt">
+            <h1 class="header l-txt">Planty</h1>
+            <h2 class="header md-txt">Keep your life <span class="grad-txt">green</span> & healthy</h2>
+            <div class="scroll body-txt s-txt" data-astro-cid-j7pv25f6=""> <svg width="23" height="33" viewBox="0 0 23 33" fill="none" style="height: 70%;" data-astro-cid-j7pv25f6=""> <rect x="0.767442" y="0.767442" width="20.7209" height="31.4651" rx="10.3605" stroke="#000" stroke-width="1.53488" data-astro-cid-j7pv25f6=""></rect> <rect x="9" y="8" width="4" height="8" rx="2" fill="#000" data-astro-cid-j7pv25f6=""></rect> </svg> <small data-astro-cid-j7pv25f6="">See more of planty below</small> </div>
         </div>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/solid.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.5.1/dist/simpleParallax.min.js"></script>
+    <div class="services" id="services">
+        <h1 class="header l-txt">Why planty</h1>
+        <div class="card-container">
+            <div class="card">
+                <div class="content">
+                  <div class="card-head">
+                    <img class="card-logo" src="img/verify-verified-check-icon.svg" alt="">
+                    <h1 class="header md-txt">verification</h1>
+                  </div>
+                  <p class="para body-txt s-txt">
+                    At Planty, prioritize transaction integrity, authenticity. Shop confidently with our trustworthy experience; satisfaction and security assured.
+                  </p>
+                </div>
+              </div>
+              <div class="card">
+                <div class="content">
+                  <div class="card-head">
+                    <img class="card-logo"  src="img/clock-line-icon.svg" alt="">
+                    <h1 class="header md-txt">fast delivery</h1>
+                  </div>
+                  <p class="para body-txt s-txt">
+                    Experience Planty's fast delivery and high-quality packaging, ensuring your plants arrive promptly and in perfect condition, guaranteed satisfaction.
+                  </p>
+                </div>
+              </div>
+              <div class="card">
+                <div class="content">
+                  <div class="card-head">
+                    <img class="card-logo"  src="img/cart-line-icon.svg" alt="">
+                    <h1 class="header md-txt">great quality</h1>
+                  </div>
+                  
+                  <p class="para body-txt s-txt">
+                    Our farms nurture and cultivate top-quality plants, ensuring excellence from seed to delivery. Experience Planty's commitment to superior quality firsthand.
+                  </p>
+                </div>
+              </div>
+        </div>
+    </div>
+    <footer>
+      
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script src="js/index.js"></script>
 </body>
 </html>

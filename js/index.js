@@ -1,15 +1,39 @@
-function goToAbout(){
-    window.location.href='../html/about.html';
-}
+const main_img= document.getElementById('main_img');
+const main_txt= document.getElementById('main_txt');
 
-var abtBtn=document.getElementById('abtBtn');
+var ease_="elastic.out(1,0.3)"
 
-abtBtn.addEventListener('click',goToAbout);
+gsap.fromTo(
+    main_img,
+    {
+        x: -500,
+        opacity: 0
+    },
+    {
+        x: 0,
+        opacity: 1,
+        duration: 2.5, 
+        delay:0.5,
+        ease: "power4.out"
+    }
+);
 
-function goToLogin(){
-    window.location.href='../html/login.html';
-}
+const mainImgDuration = 2.5;
+const mainTxtDelay = mainImgDuration / 2;
 
-var lgBtn=document.getElementById('lgBtn');
+gsap.fromTo(
+    main_txt,
+    {
+        x: -500,
+        opacity: 0
+    },
+    {
+        x: 0,
+        opacity: 1,
+        duration: 1.25, 
+        delay: mainTxtDelay, 
+        ease: ease_
+    }
+);
 
-lgBtn.addEventListener('click',goToLogin);
+
